@@ -37,3 +37,6 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+SETUP_COMPLETE.md
+VISUAL_GUIDE.md

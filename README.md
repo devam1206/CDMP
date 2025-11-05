@@ -1,50 +1,102 @@
-# Welcome to your Expo app 👋
+# Community-Driven Infrastructure Management App 🏗️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, user-friendly mobile app for reporting and managing community infrastructure issues. Earn points, climb leaderboards, and redeem rewards for making your community better!
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 🚀 Quick Start
 
 ```bash
-npm run reset-project
+# Install dependencies (already done!)
+npm install --legacy-peer-deps
+
+# Start development server (already running!)
+npx expo start
+
+# Then press:
+# - 'a' for Android
+# - 'i' for iOS
+# - 'w' for web
+# - Scan QR code with Expo Go app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## ✨ Features
 
-## Learn more
+### 🏠 **Dashboard**
+- View your points, rank, and rewards
+- Track submission progress with visual timelines
+- See recent notifications and updates
 
-To learn more about developing your project with Expo, look at the following resources:
+### 📸 **Submit Reports**
+- Upload photos (camera or gallery)
+- AI-powered categorization
+- Track submission status in real-time
+- View and edit previous submissions
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 🏆 **Leaderboard**
+- National rankings with top 3 podium
+- See your position highlighted
+- Filter by time period
 
-## Join the community
+### 🎁 **Redeem Rewards**
+- Browse prizes by category
+- Exchange points for real rewards
+- Smart locking based on points
 
-Join our community of developers creating universal apps.
+### 👤 **Profile & Settings**
+- Manage account details
+- View achievements
+- Edit shipping address
+- Customize preferences
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📚 Documentation
+
+- **Quick Start**: See `QUICK_START.md` for immediate next steps
+- **Full Documentation**: Check `APP_DOCUMENTATION.md` for complete details
+- **Visual Guide**: View `VISUAL_GUIDE.md` for UI/UX showcase
+- **Setup Complete**: See `SETUP_COMPLETE.md` for feature overview
+
+## 🎨 Tech Stack
+
+- React Native & Expo
+- TypeScript
+- NativeWind (Tailwind CSS)
+- Expo Router
+- Ionicons
+
+## 📱 Screens
+
+1. **Home/Dashboard** - Points, rank, submission tracking
+2. **Submissions** - Upload and manage reports
+3. **Leaderboard** - View national rankings
+4. **Rewards** - Redeem prizes
+5. **Profile** - Account settings and achievements
+
+## 🎯 Current Status
+
+✅ All screens implemented  
+✅ Navigation configured  
+✅ Mock data populated  
+✅ Dark mode supported  
+✅ AI categorization ready  
+✅ Status tracking functional  
+✅ Ready to test!  
+
+## 🏃‍♂️ Next Steps
+
+The app is **running right now**! Check your terminal for the QR code and:
+
+1. Scan it with Expo Go (iOS/Android)
+2. Or press `a` for Android emulator
+3. Or press `i` for iOS simulator
+
+Start exploring the features immediately!
+
+## 📖 Learn More
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [NativeWind](https://www.nativewind.dev/)
+
+---
+
+**Built with ❤️ for better communities**
+
