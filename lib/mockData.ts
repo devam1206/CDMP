@@ -79,7 +79,7 @@ export const mockLeaderboard: LeaderboardEntry[] = [
   {
     id: '101',
     username: 'cityheroes2025',
-    displayName: 'Sarah Martinez',
+    displayName: 'Devam Desai',
     avatarUri: 'https://i.pravatar.cc/150?img=1',
     points: 5240,
     rank: 1,
@@ -88,7 +88,7 @@ export const mockLeaderboard: LeaderboardEntry[] = [
   {
     id: '102',
     username: 'fixitfrank',
-    displayName: 'Frank Johnson',
+    displayName: 'Gaurav Mishra',
     avatarUri: 'https://i.pravatar.cc/150?img=3',
     points: 4890,
     rank: 2,
@@ -97,7 +97,7 @@ export const mockLeaderboard: LeaderboardEntry[] = [
   {
     id: '103',
     username: 'communitywatch',
-    displayName: 'Emily Chen',
+    displayName: 'Mahalaxmi Bhagawati',
     avatarUri: 'https://i.pravatar.cc/150?img=5',
     points: 4120,
     rank: 3,

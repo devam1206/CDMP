@@ -5,17 +5,17 @@ import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import { Alert, ScrollView, TouchableOpacity, View } from 'react-native';
 
-type CategoryFilter = 'all' | 'Gift Cards' | 'Experiences' | 'Merchandise' | 'Transit';
+type CategoryFilter = 'All' | 'Gift Cards' | 'Experiences' | 'Merchandise' | 'Transit';
 
 export default function RewardsScreen() {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('all');
+  const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('All');
 
   const filteredPrizes =
-    selectedCategory === 'all'
+    selectedCategory === 'All'
       ? mockPrizes
       : mockPrizes.filter((prize) => prize.category === selectedCategory);
 
-  const categories: CategoryFilter[] = ['all', 'Gift Cards', 'Experiences', 'Merchandise', 'Transit'];
+  const categories: CategoryFilter[] = ['All', 'Gift Cards', 'Experiences', 'Merchandise', 'Transit'];
 
   const handleRedeem = (prizeTitle: string, pointCost: number) => {
     Alert.alert(
@@ -79,7 +79,7 @@ export default function RewardsScreen() {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        className="px-6 py-4 max-h-16">
+        className="px-6 py-4 max-h-20">
         {categories.map((category) => (
           <TouchableOpacity
             key={category}
