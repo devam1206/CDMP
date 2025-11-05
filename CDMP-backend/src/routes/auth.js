@@ -108,6 +108,15 @@ router.get("/profile", require("../utils/auth"), async (req, res) => {
     const user = await db("users").where({ id: req.user.id }).first();
     if (!user) return res.status(404).json({ success: false, message: "User not found" });
 
+    // Calculate rank by counting users with more points (excluding admins)
+    const rank = await db("users")
+      .where('points', '>', user.points)
+      .where('is_admin', false)
+      .count('* as count')
+      .first();
+    
+    const userRank = parseInt(rank.count) + 1;
+
     res.json({
       success: true,
       user: {
@@ -117,7 +126,7 @@ router.get("/profile", require("../utils/auth"), async (req, res) => {
         email: user.email,
         avatarUri: user.avatar_uri,
         points: user.points,
-        rank: user.rank,
+        rank: userRank,
         submissions: user.submissions_count,
         shippingAddress: user.shipping_address
       }

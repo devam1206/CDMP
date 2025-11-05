@@ -28,18 +28,19 @@ app.use("/admin", adminRoutes);
 app.get("/api/leaderboard", async (req, res) => {
   try {
     const users = await require("./db")("users")
-      .select('id', 'username', 'display_name', 'avatar_uri', 'points', 'rank', 'submissions_count')
+      .select('id', 'username', 'display_name', 'avatar_uri', 'points', 'submissions_count')
       .where('is_admin', false) // Exclude admin users from leaderboard
       .orderBy('points', 'desc')
       .limit(50);
 
-    const leaderboard = users.map(user => ({
+    // Assign ranks based on order
+    const leaderboard = users.map((user, index) => ({
       id: user.id.toString(),
       username: user.username,
       displayName: user.display_name,
       avatarUri: user.avatar_uri,
       points: user.points,
-      rank: user.rank,
+      rank: index + 1, // Rank is position in sorted list
       submissions: user.submissions_count
     }));
 
